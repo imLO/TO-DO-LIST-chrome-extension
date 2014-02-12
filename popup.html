@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="mtd.js"></script>
+    </head>
+    <body>
+        <form id="task_form">
+            <h1>TO DO LIST</h1>
+            <span class="error"></span>
+            <div>
+                <input class="inputs" id="task_input" type="text" placeholder="Enter new task."/>
+                <input id="btnsubmit" type="submit" value="+"/>
+            </div>
+        </form>
+        <div id="task_table">
+            <h3>unfinished</h3>
+            <ul id="task_list"></ul>
+        </div>
+        <div id="finished_task_table">
+            <h3>finished</h3><a id="task_clear" class="button" href="#">X</a>
+            <ul id="finished_task_list"></ul>
+        </div>
+    </body>
+</html>
